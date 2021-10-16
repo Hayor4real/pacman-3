@@ -1,0 +1,199 @@
+html {
+  font-size: 62.5%;
+}
+
+/* * {
+  box-sizing: border-box;
+} */
+s body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  margin: 0;
+  color: white;
+  background: black;
+  overflow: hidden;
+}
+
+button {
+  padding: 15px 30px;
+  display: inline-block;
+  border-radius: 10px;
+  background: black;
+  color: white;
+  border: none;
+  margin-top: 1rem;
+}
+
+h1,
+h2 {
+  font-size: 60px;
+  letter-spacing: 2px;
+}
+
+h3 {
+  font-size: 64px;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  width: 504px;
+  height: 504px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.grid div {
+  width: 18px;
+  height: 18px;
+}
+
+.pac-dot {
+  background-color: yellowgreen;
+  border: 5px solid white;
+}
+
+.wall {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.power-pellet {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.power-pellet::before {
+  content: "🍞";
+}
+
+.pacman {
+  background-color: greenyellow;
+  border-radius: 7.5px;
+  border: none;
+  position: relative;
+  transform: rotate(0.4turn);
+  z-index: -1;
+}
+
+.rotate-top {
+  transform: rotate(0.13turn);
+}
+.rotate-bottom {
+  transform: rotate(0.63turn);
+}
+.rotate-left {
+  transform: rotate(0.9turn);
+}
+
+.rotate-right {
+  transform: rotate(00.4turn);
+}
+
+.pacman::before {
+  background-color: greenyellow;
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  z-index: -1;
+}
+.ghost {
+  border: none;
+  position: relative;
+}
+
+.ghost::after {
+  background-color: #000;
+  width: 4px;
+  height: 4px;
+  border: none;
+  border-radius: 2px;
+  top: 2px;
+  left: 2px;
+  content: "";
+  position: absolute;
+}
+.ghost::before {
+  background-color: #000;
+  width: 4px;
+  height: 4px;
+  border: none;
+  border-radius: 2px;
+  top: 2px;
+  left: 2px;
+  content: "";
+  position: absolute;
+}
+
+.blinky {
+  background-color: red;
+  border: none;
+}
+
+.pinky {
+  background-color: pink;
+  border: none;
+}
+
+.inky {
+  background-color: aqua;
+  border: none;
+}
+
+.clyde {
+  background-color: orange;
+  border: none;
+}
+
+.scared {
+  background-color: black;
+  border: none;
+  position: relative;
+}
+
+.scared::before {
+  background-color: black;
+  width: 4px;
+  height: 4px;
+  border: none;
+  border-radius: 2px;
+  top: 2px;
+  right: 2px;
+  content: "";
+  position: absolute;
+}
+.scared::after {
+  background-color: black;
+  width: 4px;
+  height: 4px;
+  border: none;
+  border-radius: 2px;
+  top: 2px;
+  right: 2px;
+  content: "";
+  position: absolute;
+}
+
+.message-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  z-index: 1;
+}
+
+.display-none {
+  display: none;
+}
